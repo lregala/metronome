@@ -1,0 +1,65 @@
+body {
+    /* background-color:rgb(25, 114, 120,0.85); */
+    background-image: linear-gradient(to bottom, rgba(25, 114, 120,0.6), rgba(25, 114, 120,1));
+    color: white;
+    font-family: 'Heebo', sans-serif!important;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+#header{
+    padding: 1%;
+}
+#main{
+    padding: 5%;
+   
+}
+#footer{
+    
+}
+
+h1 {
+    font-size: 20vh;
+    padding-bottom: 0;
+    
+}
+h2 {
+    font-size: 5vh;
+}
+h4 {
+    font-size: 3vh;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    padding: 2%;
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 80%; /* Full-width */
+    height: 20px; /* Specified height */
+    background: #197278; 
+    outline: none; /* Remove outline */
+    opacity: 1; 
+  }
+  
+
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 50px; /* Slider handle height */
+    background: #ffffff; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 50px; /* Slider handle height */
+    background: #ffffff; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }

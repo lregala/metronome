@@ -14,9 +14,7 @@ body {
     padding: 5%;
    
 }
-#footer{
-    
-}
+
 
 h1 {
     font-size: 20vh;
@@ -30,36 +28,38 @@ h4 {
     font-size: 3vh;
 }
 
+
 .slidecontainer {
     width: 100%; /* Width of the outside container */
     padding: 2%;
   }
   
-  /* The slider itself */
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 80%; /* Full-width */
-    height: 20px; /* Specified height */
-    background: #197278; 
-    outline: none; /* Remove outline */
-    opacity: 1; 
-  }
-  
+/* The slider itself */
+.slider {
+-webkit-appearance: none;  /* Override default CSS styles */
+appearance: none;
+width: 80%; /* Full-width */
+height: 20px; /* Specified height */
+background: #197278; 
+outline: none; /* Remove outline */
+opacity: 1; 
+}
 
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 50px; /* Slider handle height */
-    background: #ffffff; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 50px; /* Slider handle height */
-    background: #ffffff; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none; /* Override default look */
+appearance: none;
+width: 25px; /* Set a specific slider handle width */
+height: 50px; /* Slider handle height */
+background: #ffffff; /* Green background */
+cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+width: 25px; /* Set a specific slider handle width */
+height: 50px; /* Slider handle height */
+background: #ffffff; /* Green background */
+cursor: pointer; /* Cursor on hover */
+}
+

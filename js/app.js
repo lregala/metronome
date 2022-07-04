@@ -9,10 +9,10 @@ const tempoDecrement = document.querySelector('#bpm-decrement');
 const tempoIncrement = document.querySelector('#bpm-increment');
 
 
-const minTempo = 20;
-const maxTempo = 300;
+const minTempo = document.getElementById("metroRange").min;
+const maxTempo = document.getElementById("metroRange").max;
 
-let bpm = 120;
+let bpm = 160;
 let tempoMarking = "Allegro";
 let count = 0;
 // let isRunning = false;
@@ -96,10 +96,9 @@ function updateMetronome() {
 }
 
 function validateTempo() {
-    if (bpm <=20) {return}
-    if (bpm >= 300) {return}
+    if (bpm <=minTempo) {return}
+    if (bpm >= maxTempo) {return}
 }
-
 
 
 const click1 = new Audio("./sfx/weak/metro1w.wav");

@@ -8,9 +8,15 @@ const btnPlayback = document.querySelector('#btn-playback');
 const tempoDecrement = document.querySelector('#bpm-decrement');
 const tempoIncrement = document.querySelector('#bpm-increment');
 
+const beatsDecrement = document.querySelector('#beats-decrement');
+const beatsIncrement = document.querySelector('#beats-increment');
+const beatsText = document.querySelector('.beatsPerMeasure');
 
 const minTempo = document.getElementById("metroRange").min;
 const maxTempo = document.getElementById("metroRange").max;
+
+const minBeats = 2;
+const maxBeats = 8;
 
 let bpm = 160;
 let tempoMarking = "Allegro";
@@ -54,6 +60,7 @@ tempoIncrement.addEventListener('click', ()=> {
 });
 
 
+
 tempoSlider.addEventListener('input', ()=> {
   bpm = tempoSlider.value;
   tempoDisplay.textContent = bpm;
@@ -66,6 +73,33 @@ tempoSlider.addEventListener('input', ()=>{
     validateTempo();
     updateMetronome();
 })
+
+
+
+beatsDecrement.addEventListener('click', ()=> {
+    beatsPerMeasure = parseInt(beatsText.textContent);
+    if (beatsPerMeasure!=minBeats){
+        beatsPerMeasure--;
+        beatsText.textContent = beatsPerMeasure;
+        
+        count=0;
+        updateMetronome();
+    }
+});
+
+beatsIncrement.addEventListener('click', ()=> {
+    beatsPerMeasure = parseInt(beatsText.textContent);
+    if (beatsPerMeasure!=maxBeats){
+        beatsPerMeasure++;
+        beatsText.textContent = beatsPerMeasure;
+       
+        count=0;
+        updateMetronome();
+    }
+});
+
+
+
 
 
 function updateMetronome() {

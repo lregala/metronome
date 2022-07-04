@@ -21,7 +21,6 @@ const maxBeats = 8;
 let bpm = 160;
 let tempoMarking = "Allegro";
 let count = 0;
-// let isRunning = false;
 let beatsPerMeasure = 4;
 let btnText = "START"
 
@@ -81,8 +80,7 @@ beatsDecrement.addEventListener('click', ()=> {
     if (beatsPerMeasure!=minBeats){
         beatsPerMeasure--;
         beatsText.textContent = beatsPerMeasure;
-        
-        count=0;
+
         updateMetronome();
     }
 });
@@ -93,7 +91,6 @@ beatsIncrement.addEventListener('click', ()=> {
         beatsPerMeasure++;
         beatsText.textContent = beatsPerMeasure;
        
-        count=0;
         updateMetronome();
     }
 });
@@ -126,7 +123,7 @@ function updateMetronome() {
     }
 
     tempoDescriptor.textContent = tempoMarking;
-
+    count=0;
 }
 
 function validateTempo() {
